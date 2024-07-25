@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Aalok Tanwar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Aalok Tanwar">Aalok Tanwar</h1>
+
+          <p class="title">Software developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:aaloktanwar.dev@gmail.com" class="contact-link">aaloktanwar.dev@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919625090685" class="contact-link">+91-9625090685</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-01-14">January 14, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gurugram, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/aalok-tanwar-1230631b8/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://leetcode.com/vajra88/" class="social-link">
+                <img src="./assets/images/icon-leetcode.svg" alt="leetcode icon" width="20" class="social-img">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/tanwarAalok" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a software engineer upskilling in full stack web development by building and working on real practical projects. 
+            I have a total of 4 months of internship experience as a Full stack developer at Tutcart and React developer at Kylo Apps spending 2 months each at both organization. 
+          </p>
+
+          <p>
+            I am pursuing a BTech in Computer Science from Vellore Institute of Technology, 
+            I am proficient in MERN stack, Next.js, and Unity game engine, and have strong teamwork and communication skills. 
+            I am fluent in English and Hindi.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Development</h4>
+
+                <p class="service-item-text">
+                  Professional development of games for iOS, Android and PC.
+                </p>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sahib Singh Sapra</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I am delighted to recommend Aalok Tanwar, who undertook an internship as a Web Developer at Tutcart. Aalok's dedication, rapid acquisition of new skills, 
+                    and strong work ethic were truly impressive. 
+                    Throughout his time with us, he consistently demonstrated an exceptional ability to adapt to new technologies and collaborate effectively within our team. 
+                    Aalok's collaborative approach and excellent communication skills greatly contributed to the success of our projects. 
+                    I have every confidence that he will continue to excel in his future endeavours in web development.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">FullStack Developer Intern</h4>
+
+              <span>Jan 2024 - March 2024</span>
+
+              <p class="timeline-text">
+                 Leveraged Express.js and Next.js frameworks along with MongoDB for backend and frontend development,
+                 contributing to the creation of MVP of product
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">React Developer Intern</h4>
+
+              <span>Oct 2022 - Dec 2022</span>
+
+              <p class="timeline-text">
+                Collaborated on API integration and UI development using React.js and Bootstrap within Admin Panels, following
+                Figma designs for more than 3 different projects
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">VIT Bhopal University</h4>
+
+              <span>2020 - 2024</span>
+
+              <p class="timeline-text">
+                  Studied Computer Science and Engineering with a focus on Software and Game Development
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+      
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MERN stack</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Frontend</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>FullStack</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Frontend</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Backend</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>FullStack</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Games</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="fullstack">
+              <a href="https://github.com/tanwarAalok/DevFlow" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DevFlow</h3>
+
+                <p class="project-desc">Nextjs, MongoDB, Tailwind CSS, TypeScript</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="fullstack">
+              <a href="https://github.com/tanwarAalok/sketch-board" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Realtime Sketch Board</h3>
+
+                <p class="project-desc">Express.js, Socket.io, HTML, CSS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="frontend">
+              <a href="https://github.com/tanwarAalok/google-sheet-clone" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Google Sheet Clone" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Google Sheet Clone</h3>
+
+                <p class="project-desc">HTML, CSS, JavaScript</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="backend">
+              <a href="https://github.com/tanwarAalok/FMS-API-Gateway" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="fms" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Flight Management System</h3>
+
+                <p class="project-desc">Express.js, MySQL, RabbitMQ, Docker</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="frontend">
+              <a href="https://github.com/tanwarAalok/ecma-book" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="ecma-book" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ecma-book</h3>
+
+                <p class="project-desc">React.js, Redux, ESBuild, TypeScript</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="fullstack">
+              <a href="https://github.com/tanwarAalok/Code-Sync" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="CodeSync" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CodeSync</h3>
+
+                <p class="project-desc">React.js, Express.js, Socket.io</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://yashg.itch.io/can-you-save" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="Can You Save" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Can You Save</h3>
+
+                <p class="project-desc">Developed a 2d platformer game with multiple levels.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://tanwaraalok.itch.io/merlins-demon-war" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.png" alt="Merlins Demon War" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Merlins Demon War</h3>
+
+                <p class="project-desc">Developed a simple fun single player card battler.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://oxygenator.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="Oxygenator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Oxygenator</h3>
+
+                <p class="project-desc">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
