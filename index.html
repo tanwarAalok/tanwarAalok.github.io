@@ -1,794 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aalok Tanwar - Portfolio showcasing projects in web development and software engineering.">
-  <meta name="keywords" content="Aalok Tanwar, Web Development, AI, Software Engineering, Portfolio">
-  <meta name="author" content="Aalok Tanwar">
-  <title>Aalok Tanwar - Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aalok Tanwar | Software Engineer – AI, Backend and Mobile</title>
+<meta name="description" content="Aalok Tanwar is a software engineer and Forward Deployed Engineer at Accenture in Gurugram, building AI agents, developer tooling, backends and mobile apps.">
+<meta name="author" content="Aalok Tanwar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tanwaraalok.github.io/">
+<meta name="theme-color" content="#0f131a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#eef0f3" media="(prefers-color-scheme: light)">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aalok Tanwar">
+<meta property="og:title" content="Aalok Tanwar | Software Engineer">
+<meta property="og:description" content="Software engineer and problem solver. Forward Deployed Engineer at Accenture, building AI agents and the systems around them.">
+<meta property="og:url" content="https://tanwaraalok.github.io/">
+<meta property="og:image" content="https://tanwaraalok.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aalok Tanwar | Software Engineer">
+<meta name="twitter:description" content="Software engineer and problem solver. Forward Deployed Engineer at Accenture, building AI agents and the systems around them.">
+<meta name="twitter:image" content="https://tanwaraalok.github.io/og-image.png">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4fd8'/%3E%3Cpath d='M18 46 32 16l14 30M23 37h18' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 
-  <!-- Scripts -->
-  <script type="application/ld+json">
-  {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Aalok Tanwar",
-      "jobTitle": "Software Engineer",
-      "url": "https://tanwaraalok.github.io/",
-      "sameAs": [
-          "https://www.linkedin.com/in/aalok-tanwar-1230631b8/",
-          "https://github.com/tanwarAalok",
-          "https://twitter.com/AalokTanwar4"
-      ],
-      "alumniOf": "VIT Bhopal University",
-      "knowsAbout": ["Web Development", "Game Development", "Software Engineering"]
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aalok Tanwar",
+  "url": "https://tanwaraalok.github.io/",
+  "jobTitle": "Forward Deployed Engineer",
+  "worksFor": { "@type": "Organization", "name": "Accenture" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology, Bhopal" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Gurugram", "addressCountry": "IN" },
+  "knowsAbout": ["AI agents", "MCP", "LangGraph", "React Native", "Node.js", "Spring Boot", "GraphQL", "Microservices", "AWS", "AI-assisted development"],
+  "sameAs": [
+    "https://github.com/tanwarAalok",
+    "https://www.linkedin.com/in/aalok-tanwar-1230631b8/"
+  ]
+}
+</script>
+
+
+<style>
+/* Layout: one calm reading column. Small header with avatar, short intro, then quiet labelled sections: Now, Experience, Projects, Toolbox, Contact. */
+:root{
+  --bg:#eef0f3; --surface:#f8f9fb; --ink:#13171d; --muted:#5a6474; --line:#d3d8e0;
+  --accent:#2f4fd8; --accent-soft:#e1e6fb; --accent-ink:#ffffff;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --text:"Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f131a; --surface:#161b24; --ink:#e6e9ef; --muted:#9aa4b4; --line:#262e3b;
+    --accent:#8ea6ff; --accent-soft:#1d2540; --accent-ink:#0f131a; color-scheme:dark;
   }
-  </script>
+}
+:root[data-theme="dark"]{
+  --bg:#0f131a; --surface:#161b24; --ink:#e6e9ef; --muted:#9aa4b4; --line:#262e3b;
+  --accent:#8ea6ff; --accent-soft:#1d2540; --accent-ink:#0f131a; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--text); font-size:1.0625rem; line-height:1.7; -webkit-font-smoothing:antialiased;
+  padding-left:max(20px, env(safe-area-inset-left,0px)); padding-right:max(20px, env(safe-area-inset-right,0px))}
+a{color:inherit; text-decoration-color:var(--line); text-decoration-thickness:1.5px; text-underline-offset:3px}
+a:hover{color:var(--accent); text-decoration-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:4px}
+.page{max-width:720px; margin:0 auto; padding-block:40px 64px}
+.skip{position:absolute; left:-999px}
+.skip:focus{left:12px; top:12px; background:var(--accent); color:var(--accent-ink); padding:6px 12px; border-radius:6px; font-family:var(--display)}
 
+header.top{display:flex; align-items:center; justify-content:space-between; gap:16px; font-family:var(--display); font-size:.95rem}
+.me{display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:600}
+.me img{width:40px; height:40px; border-radius:50%; background:var(--surface); border:1px solid var(--line)}
+.top nav{display:flex; gap:18px; align-items:center}
+.top nav a{text-decoration:none; color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+.theme{font:inherit; font-size:.85rem; background:none; border:1px solid var(--line); color:var(--ink); padding:4px 12px; border-radius:999px; cursor:pointer}
+.theme:hover{border-color:var(--ink)}
 
+.intro{padding-block:72px 40px}
+h1{font-family:var(--display); font-weight:800; font-size:clamp(2.4rem, 7vw, 3.6rem); line-height:1.02; letter-spacing:-.035em; margin:0 0 20px; text-wrap:balance}
+h1 span{color:var(--accent)}
+.intro p{margin:0 0 14px; max-width:36em}
+.intro .big{font-size:1.25rem; line-height:1.55}
+.now{display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-size:.92rem; background:var(--accent-soft); color:var(--ink); padding:6px 14px 6px 10px; border-radius:999px; margin:6px 0 24px}
+.now i{width:8px; height:8px; border-radius:50%; background:var(--accent); display:block}
+.links{display:flex; flex-wrap:wrap; gap:10px; font-family:var(--display); font-size:.95rem}
+.btn{text-decoration:none; padding:9px 16px; border-radius:10px; border:1px solid var(--line); background:var(--surface); color:var(--ink)}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.08); color:var(--accent-ink)}
+
+section{padding-block:40px; border-top:1px solid var(--line)}
+h2{font-family:var(--display); font-size:.8rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin:0 0 24px}
+
+.traits{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 32px; margin:0}
+.traits dt{font-family:var(--display); font-weight:600; margin-bottom:2px}
+.traits dd{margin:0; color:var(--muted); font-size:1rem; line-height:1.6}
+
+.jobs{list-style:none; margin:0; padding:0; display:grid; gap:28px}
+.job-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap}
+.job h3{font-family:var(--display); font-weight:600; font-size:1.15rem; margin:0; letter-spacing:-.01em}
+.job .when{font-family:var(--display); font-size:.88rem; color:var(--muted); font-variant-numeric:tabular-nums; white-space:nowrap}
+.job .role{color:var(--muted); margin:0 0 8px; font-size:1rem}
+.job ul{margin:0; padding-left:1.1em}
+.job li{margin:0 0 6px}
+
+.projects{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
+.proj{display:flex; flex-direction:column; gap:6px; padding:18px 20px; border:1px solid var(--line); border-radius:14px; background:var(--surface); text-decoration:none; color:var(--ink); min-width:0; transition:border-color .15s, transform .15s}
+.proj:hover{border-color:var(--accent); color:var(--ink); transform:translateY(-2px)}
+.proj.wide{grid-column:1 / -1}
+.proj h3{font-family:var(--display); font-weight:600; font-size:1.08rem; margin:0; display:flex; justify-content:space-between; gap:8px}
+.proj h3::after{content:"↗"; color:var(--muted); font-weight:400}
+.proj:hover h3::after{color:var(--accent)}
+.proj p{margin:0; font-size:.98rem; line-height:1.55; color:var(--muted)}
+.tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:8px}
+.tags span{font-family:var(--display); font-size:.78rem; padding:2px 9px; border-radius:999px; background:var(--accent-soft); color:var(--ink)}
+.tag-ai{font-family:var(--display); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); font-weight:600}
+.more{margin:22px 0 0; padding:0; list-style:none; font-size:1rem}
+.more li{display:flex; gap:12px; padding:9px 0; border-top:1px dashed var(--line); flex-wrap:wrap}
+.more li a{font-family:var(--display); font-weight:600; min-width:150px}
+.more li span{color:var(--muted)}
+
+.tool{display:grid; grid-template-columns:170px 1fr; gap:6px 24px; margin:0}
+.tool dt{font-family:var(--display); font-weight:600}
+.tool dd{margin:0 0 10px; color:var(--muted)}
+.awards{margin:20px 0 0; padding-left:1.1em}
+.awards li{margin-bottom:4px}
+
+.mail{font-family:var(--display); font-weight:800; font-size:clamp(1.5rem, 5vw, 2.4rem); letter-spacing:-.03em; word-break:break-word; text-decoration-thickness:2px}
+footer{font-family:var(--display); font-size:.85rem; color:var(--muted); padding-top:40px}
+
+@media (max-width:640px){
+  .top nav a{display:none}
+  .intro{padding-block:48px 32px}
+  .traits,.projects{grid-template-columns:1fr}
+  .tool{grid-template-columns:1fr}
+  .tool dd{margin-bottom:14px}
+}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .proj{transition:none} .proj:hover{transform:none} }
+</style>
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+  <header class="top">
+    <a class="me" href="#top"><img src="assets/images/my-avatar.png" alt="" width="40" height="40">Aalok Tanwar</a>
+    <nav aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+    </nav>
+  </header>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Aalok Tanwar" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Aalok Tanwar">Aalok Tanwar</h1>
-
-          <p class="title">Software developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+  <main id="main">
+    <div class="intro" id="top">
+      <h1>Software engineer. <span>Problem solver.</span> Curious explorer.</h1>
+      <p class="big">I'm Aalok. I build AI agents, plus the backends and apps they run on. My favourite work is turning a messy real-world problem into working software.</p>
+      <div class="now"><i aria-hidden="true"></i>Now: Forward Deployed Engineer at Accenture, building AI software</div>
+      <div class="links">
+        <a class="btn primary" href="resume.pdf">Resume</a>
+        <a class="btn" href="https://github.com/tanwarAalok" rel="me noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/aalok-tanwar-1230631b8/" rel="me noopener">LinkedIn</a>
+        <a class="btn" href="mailto:aaloktanwar.dev@gmail.com">Email</a>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:aaloktanwar.dev@gmail.com" class="contact-link">aaloktanwar.dev@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919625090685" class="contact-link">+91-9625090685</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2002-01-14">January 14, 2002</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Gurugram, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/aalok-tanwar-1230631b8/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://leetcode.com/vajra88/" class="social-link">
-                <img src="./assets/images/icon-leetcode.svg" alt="leetcode icon" width="20" class="social-img">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/tanwarAalok" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a software engineer upskilling in full stack web development by building and working on real practical projects. 
-            I have a total of 4 months of internship experience as a Full stack developer at Tutcart and React developer at Kylo Apps spending 2 months each at both organization. 
-          </p>
-
-          <p>
-            I am pursuing a BTech in Computer Science from Vellore Institute of Technology, 
-            I am proficient in MERN stack, Next.js, and Unity game engine, and have strong teamwork and communication skills. 
-            I am fluent in English and Hindi.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Game Development</h4>
-
-                <p class="service-item-text">
-                  Professional development of games for iOS, Android and PC.
-                </p>
-              </div>
-
-            </li>
-
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Sahib Singh Sapra" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sahib Singh Sapra</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I am delighted to recommend Aalok Tanwar, who undertook an internship as a Web Developer at Tutcart. Aalok's dedication, rapid acquisition of new skills, 
-                    and strong work ethic were truly impressive. 
-                    Throughout his time with us, he consistently demonstrated an exceptional ability to adapt to new technologies and collaborate effectively within our team. 
-                    Aalok's collaborative approach and excellent communication skills greatly contributed to the success of our projects. 
-                    I have every confidence that he will continue to excel in his future endeavours in web development.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Sahib Singh Sapra</h4>
-
-              <time datetime="2021-06-14">16 March, 2024</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">FullStack Developer Intern</h4>
-
-              <span>Jan 2024 - March 2024</span>
-
-              <p class="timeline-text">
-                 Leveraged Express.js and Next.js frameworks along with MongoDB for backend and frontend development,
-                 contributing to the creation of MVP of product
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">React Developer Intern</h4>
-
-              <span>Oct 2022 - Dec 2022</span>
-
-              <p class="timeline-text">
-                Collaborated on API integration and UI development using React.js and Bootstrap within Admin Panels, following
-                Figma designs for more than 3 different projects
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">VIT Bhopal University</h4>
-
-              <span>2020 - 2024</span>
-
-              <p class="timeline-text">
-                  Studied Computer Science and Engineering with a focus on Software and Game Development
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-      
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C++</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MERN stack</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Frontend</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Backend</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>FullStack</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Games</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Frontend</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Backend</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>FullStack</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Games</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/tanwarAalok/DevFlow" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DevFlow</h3>
-
-                <p class="project-desc">Nextjs, MongoDB, Tailwind CSS, TypeScript</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/tanwarAalok/sketch-board" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Realtime Sketch Board</h3>
-
-                <p class="project-desc">Express.js, Socket.io, HTML, CSS</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="frontend">
-              <a href="https://github.com/tanwarAalok/google-sheet-clone" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="Google Sheet Clone" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Google Sheet Clone</h3>
-
-                <p class="project-desc">HTML, CSS, JavaScript</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="backend">
-              <a href="https://github.com/tanwarAalok/FMS-API-Gateway" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="fms" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Flight Management System</h3>
-
-                <p class="project-desc">Express.js, MySQL, RabbitMQ, Docker</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="frontend">
-              <a href="https://github.com/tanwarAalok/ecma-book" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="ecma-book" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ecma-book</h3>
-
-                <p class="project-desc">React.js, Redux, ESBuild, TypeScript</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/tanwarAalok/Code-Sync" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="CodeSync" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">CodeSync</h3>
-
-                <p class="project-desc">React.js, Express.js, Socket.io</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://yashg.itch.io/can-you-save" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="Can You Save" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Can You Save</h3>
-
-                <p class="project-desc">Developed a 2d platformer game with multiple levels.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://tanwaraalok.itch.io/merlins-demon-war" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.png" alt="Merlins Demon War" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Merlins Demon War</h3>
-
-                <p class="project-desc">Developed a simple fun single player card battler.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://oxygenator.netlify.app/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="Oxygenator" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Oxygenator</h3>
-
-                <p class="project-desc">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
     </div>
 
+    <section id="about">
+      <h2>About</h2>
+      <dl class="traits">
+        <div><dt>Software developer</dt><dd>Four years shipping across the stack: React Native and React, Node.js and Spring Boot, Postgres, Kafka and AWS.</dd></div>
+        <div><dt>Problem solver</dt><dd>I start from the problem, not the tool. As an FDE I sit with client teams, find where their time goes, and build what removes it.</dd></div>
+        <div><dt>Curious</dt><dd>Most side projects start as "how does that work?": an in-browser bundler, a code-intelligence server, a RAG pipeline.</dd></div>
+        <div><dt>Explorer</dt><dd>2D games, AR and VR, real-time collaboration tools, multi-agent systems. I go where the interesting problem is.</dd></div>
+      </dl>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="jobs">
+        <li class="job">
+          <div class="job-head"><h3>Accenture</h3><span class="when">Nov 2024 – now</span></div>
+          <p class="role">Forward Deployed Engineer, AI · Advanced App Engineering Senior Analyst · Gurugram</p>
+          <ul>
+            <li>Embed with client teams, find the slow and repetitive parts of how they build software, and ship AI tooling that fixes them.</li>
+            <li>Built custom GitHub Copilot agents used across multiple client teams for low-level design, code generation and defect fixing.</li>
+            <li>Led a Node.js and IBM DataPower backend-for-frontend that serves server-driven UI, removing redundant client releases.</li>
+            <li>Ship features and critical fixes in a high-traffic telecom app on React Native, GraphQL and Redux. Accenture ACE Award, twice.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head"><h3>Tutcart</h3><span class="when">Jan – Mar 2024</span></div>
+          <p class="role">Full Stack Developer Intern · Remote</p>
+          <ul><li>Real-time group and 1-on-1 chat with Socket.io, Next.js and Express, plus an Elasticsearch and MongoDB analytics pipeline for live API traffic.</li></ul>
+        </li>
+        <li class="job">
+          <div class="job-head"><h3>Kylo Apps</h3><span class="when">Oct – Dec 2022</span></div>
+          <p class="role">React Developer Intern · Remote</p>
+          <ul><li>Responsive React admin dashboards and a high-traffic Next.js and MongoDB careers portal.</li></ul>
+        </li>
+        <li class="job">
+          <div class="job-head"><h3>VIT Bhopal University</h3><span class="when">2020 – 2024</span></div>
+          <p class="role">B.Tech, Computer Science · CGPA 8.5 / 10</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <a class="proj wide" href="https://github.com/tanwarAalok/lineage" rel="noopener">
+          <span class="tag-ai">AI tooling</span>
+          <h3>Lineage</h3>
+          <p>A code-intelligence server for large legacy codebases. Coding agents like Copilot and Claude call its MCP tools to get a project's rules and vocabulary and find the few files that matter, instead of scanning the repo. Hybrid keyword and vector search, and all data stays in the client's own Postgres.</p>
+          <div class="tags"><span>Python</span><span>MCP</span><span>pgvector</span><span>Embeddings</span></div>
+        </a>
+        <a class="proj" href="https://github.com/tanwarAalok/Agentic-Profile-Matching" rel="noopener">
+          <span class="tag-ai">AI agent</span>
+          <h3>Agentic Candidate Matching</h3>
+          <p>Screening agent that parses a job description, scores candidates over three rounds and explains every ranking change.</p>
+          <div class="tags"><span>LangGraph</span><span>RAG</span><span>Streamlit</span></div>
+        </a>
+        <a class="proj" href="https://github.com/tanwarAalok/patient-managment-system" rel="noopener">
+          <span class="tag-ai">Backend</span>
+          <h3>Patient Management</h3>
+          <p>Patient, Billing and Analytics microservices with gRPC, Kafka, circuit breakers and Grafana dashboards.</p>
+          <div class="tags"><span>Spring Boot</span><span>Kafka</span><span>gRPC</span><span>AWS CDK</span></div>
+        </a>
+        <a class="proj" href="https://github.com/tanwarAalok/pulse-backend" rel="noopener">
+          <span class="tag-ai">Full stack</span>
+          <h3>Pulse</h3>
+          <p>Social media backend with posts, follows, real-time chat and notifications, plus a React client.</p>
+          <div class="tags"><span>Node.js</span><span>Redis</span><span>Socket.io</span><span>Bull</span></div>
+        </a>
+        <a class="proj" href="https://github.com/TeamShiksha/openlogo" rel="noopener">
+          <span class="tag-ai">Open source</span>
+          <h3>OpenLogo · Team Shiksha</h3>
+          <p>12 merged PRs: protected-route auth, a search API, a toast system and mobile navigation fixes.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+        </a>
+      </div>
+      <ul class="more">
+        <li><a href="https://github.com/tanwarAalok/RAG_Based_Profile_matching" rel="noopener">RAG Profile Matching</a><span>Resume parsing and job matching with LangChain and Chroma</span></li>
+        <li><a href="https://github.com/tanwarAalok/tweet-audit" rel="noopener">Tweet Audit</a><span>Batch sentiment analysis with Spring Boot and Gemini</span></li>
+        <li><a href="https://github.com/tanwarAalok/ecma-book" rel="noopener">Ecma-book</a><span>In-browser JavaScript notebook with ESBuild, on npm</span></li>
+        <li><a href="https://github.com/tanwarAalok/Code-Sync" rel="noopener">CodeSync</a><span>Real-time collaborative code editor</span></li>
+        <li><a href="https://github.com/tanwarAalok/DevFlow" rel="noopener">DevFlow</a><span>Q&amp;A platform with job listings, in Next.js</span></li>
+        <li><a href="https://github.com/tanwarAalok/FMS-API-Gateway" rel="noopener">Flight Management</a><span>Microservices behind an auth and rate-limit gateway</span></li>
+        <li><a href="https://tanwaraalok.itch.io/merlins-demon-war" rel="noopener">Merlin's Demon War</a><span>2D card game on itch.io</span></li>
+      </ul>
+    </section>
+
+    <section id="toolbox">
+      <h2>Toolbox</h2>
+      <dl class="tool">
+        <dt>AI engineering</dt><dd>LangGraph, LangChain, MCP, RAG, pgvector, Copilot agents, Gemini and OpenRouter</dd>
+        <dt>Languages</dt><dd>TypeScript, Java, JavaScript, Python, C++, SQL</dd>
+        <dt>Frameworks</dt><dd>React Native, React, Next.js, Node.js, Express, Spring Boot, GraphQL</dd>
+        <dt>Infrastructure</dt><dd>AWS, Docker, Kafka, gRPC, Redis, PostgreSQL, MongoDB, Prometheus, Grafana</dd>
+      </dl>
+      <ul class="awards">
+        <li>Accenture ACE Award, 2 times</li>
+        <li>Google Cloud Associate Cloud Engineer</li>
+        <li>AR and VR certification, FutureSkills Prime and CDAC Pune</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="margin:0 0 10px">Happy to talk about AI engineering, hard problems, or whatever you're building.</p>
+      <a class="mail" href="mailto:aaloktanwar.dev@gmail.com">aaloktanwar.dev@gmail.com</a>
+    </section>
   </main>
 
+  <footer>© <span id="yr">2026</span> Aalok Tanwar · Gurugram, India</footer>
+</div>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<script>
+(function(){
+  var root = document.documentElement;
+  var btn = document.getElementById('theme');
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch(e) {}
+  if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+  btn.addEventListener('click', function(){
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e) {}
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
 </body>
-
 </html>
