@@ -19,12 +19,15 @@
 <meta property="og:image" content="https://tanwaraalok.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Aalok Tanwar, software engineer">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Aalok Tanwar | Software Engineer">
 <meta name="twitter:description" content="Software engineer and problem solver. Forward Deployed Engineer at Accenture, building AI agents and the systems around them.">
 <meta name="twitter:image" content="https://tanwaraalok.github.io/og-image.png">
+<meta name="twitter:image:alt" content="Aalok Tanwar, software engineer">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4fd8'/%3E%3Cpath d='M18 46 32 16l14 30M23 37h18' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/my-avatar.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,17 +36,41 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Aalok Tanwar",
-  "url": "https://tanwaraalok.github.io/",
-  "jobTitle": "Forward Deployed Engineer",
-  "worksFor": { "@type": "Organization", "name": "Accenture" },
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology, Bhopal" },
-  "address": { "@type": "PostalAddress", "addressLocality": "Gurugram", "addressCountry": "IN" },
-  "knowsAbout": ["AI agents", "MCP", "LangGraph", "React Native", "Node.js", "Spring Boot", "GraphQL", "Microservices", "AWS", "AI-assisted development"],
-  "sameAs": [
-    "https://github.com/tanwarAalok",
-    "https://www.linkedin.com/in/aalok-tanwar-1230631b8/"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tanwaraalok.github.io/#website",
+      "name": "Aalok Tanwar",
+      "url": "https://tanwaraalok.github.io/",
+      "about": { "@id": "https://tanwaraalok.github.io/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://tanwaraalok.github.io/#profile",
+      "url": "https://tanwaraalok.github.io/",
+      "name": "Aalok Tanwar | Software Engineer",
+      "isPartOf": { "@id": "https://tanwaraalok.github.io/#website" },
+      "mainEntity": { "@id": "https://tanwaraalok.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://tanwaraalok.github.io/#person",
+      "name": "Aalok Tanwar",
+      "url": "https://tanwaraalok.github.io/",
+      "image": "https://tanwaraalok.github.io/assets/images/my-avatar.png",
+      "description": "Software engineer and Forward Deployed Engineer at Accenture, building AI agents, developer tooling, backends and mobile apps.",
+      "email": "mailto:aaloktanwar.dev@gmail.com",
+      "jobTitle": "Forward Deployed Engineer",
+      "worksFor": { "@type": "Organization", "name": "Accenture" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology, Bhopal" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Gurugram", "addressCountry": "IN" },
+      "knowsAbout": ["AI agents", "MCP", "LangGraph", "React Native", "Node.js", "Spring Boot", "GraphQL", "Microservices", "AWS", "AI-assisted development"],
+      "sameAs": [
+        "https://github.com/tanwarAalok",
+        "https://www.linkedin.com/in/aalok-tanwar-1230631b8/",
+        "https://tanwaraalok.itch.io/"
+      ]
+    }
   ]
 }
 </script>
@@ -172,7 +199,7 @@ footer{font-family:var(--display); font-size:.85rem; color:var(--muted); padding
   <main id="main">
     <div class="intro" id="top">
       <h1>Software engineer. <span>Problem solver.</span> Curious explorer.</h1>
-      <p class="big">I'm Aalok. I build AI agents, plus the backends and apps they run on. My favourite work is turning a messy real-world problem into working software.</p>
+      <p class="big">I'm Aalok Tanwar. I build AI agents, plus the backends and apps they run on. My favourite work is turning a messy real-world problem into working software.</p>
       <div class="now"><i aria-hidden="true"></i>Now: Forward Deployed Engineer at Accenture, building AI software</div>
       <div class="links">
         <a class="btn primary" href="resume.pdf">Resume</a>
