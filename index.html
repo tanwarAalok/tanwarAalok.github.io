@@ -119,8 +119,6 @@ h2{font-family:var(--display); font-size:.8rem; font-weight:600; letter-spacing:
 .proj{display:flex; flex-direction:column; gap:6px; padding:18px 20px; border:1px solid var(--line); border-radius:14px; background:var(--surface); text-decoration:none; color:var(--ink); min-width:0; transition:border-color .15s, transform .15s}
 .proj:hover{border-color:var(--accent); color:var(--ink); transform:translateY(-2px)}
 .proj.wide{grid-column:1 / -1}
-.proj.static:hover{border-color:var(--line); transform:none}
-.proj.static h3::after{content:none}
 .proj h3{font-family:var(--display); font-weight:600; font-size:1.08rem; margin:0; display:flex; justify-content:space-between; gap:8px}
 .proj h3::after{content:"↗"; color:var(--muted); font-weight:400}
 .proj:hover h3::after{color:var(--accent)}
@@ -245,12 +243,12 @@ footer{font-family:var(--display); font-size:.85rem; color:var(--muted); padding
           <p>Social media backend with posts, follows, real-time chat and notifications, plus a React client.</p>
           <div class="tags"><span>Node.js</span><span>Redis</span><span>Socket.io</span><span>Bull</span></div>
         </a>
-        <div class="proj static">
+        <a class="proj" href="https://github.com/TeamShiksha/openlogo" rel="noopener">
           <span class="tag-ai">Open source</span>
           <h3>OpenLogo · Team Shiksha</h3>
           <p>12 merged PRs: protected-route auth, a search API, a toast system and mobile navigation fixes.</p>
           <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
-        </div>
+        </a>
       </div>
       <ul class="more">
         <li><a href="https://github.com/tanwarAalok/RAG_Based_Profile_matching" rel="noopener">RAG Profile Matching</a><span>Resume parsing and job matching with LangChain and Chroma</span></li>
